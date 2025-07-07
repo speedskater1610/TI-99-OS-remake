@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Special+Elite&display=swap" rel="stylesheet">
+        
+        <title>Manual BASIC/ASM</title>
+        
+        <style>
+            body {
+                text-align: center;
+                font-family: "Special Elite", system-ui;
+            }
+            
+            
+            
+            .c {
+                font-family: "Jersey 15", sans-serif;
+                font-family: 'Courier New', Courier, monospace;
+                background-color: #f4f4f4; 
+                padding: 2.5px;
+                border-radius: 5px; 
+                color: #333; 
+                white-space: pre-wrap; 
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <h1>
+            Over View
+        </h1>
+        <img src="./img/ascii.gif"/> <br/>
+        
+        for the use of this you will be using the Oct value (each are one byte consitising of 3 bits)
+        <br/>
+        when acessing memory you will use the peak and poke functions build into graphing BASIC (see graphing section of BASIC to find the rest)
+        
+        <br/><br/>
+        <hr/>
+        
+        <h1>BASIC</h1>
+        <br/>
+        <div>when ever yoou see # it means the line number in basic you havr to enter the line number as if it where a termial so make sure that youeneter this before anything or else it wont save the lien that you are writing</div>
+        <!--TODO put ouline of the basic lang-->
+        <h2>PRINTING AND VARIBLES</h2>
+        <br/>
+        <h3>printing</h3> <br/>
+        you can do <span class = "c"># print "hello world"</span>
+        or for varibles <span class = "c"># print var</span>
+        <br/>
+        <h3>varibles</h3> <br/>
+        to make a varible just put the varible type <span class = "c">int</span>  <span class = "c">str</span>  <span class = "c">char</span> <span class = "c">bool</span>  <span class = "c">dec</span>  then the varibles name <span class = "c">name</span> 
+        then a <span class = "c">=</span> with the content
+        
+        <h4><strong>EXAMPLES</strong></h4>
+        
+        
+        <br/><br/>
+        <h2>GRAPHING</h2>
+        the avaible colors for graphing are <br/>
+        <img src="img/colors.png"/> <br/>
+        <strong>THIS IS STILL IN DEV NOT INMPLMENTED YET</strong>
+        
+        
+        <h2>GRAPHING WITH MEMORY ADRESSES</h2>
+        <div>
+            the avilible memeory adresses, that get displayed are, <br/>
+            
+            m001<br/>
+            m002<br/>
+            m003<br/>
+            m004<br/>
+            m005<br/>
+            m006<br/>
+            m007<br/>
+            m008<br/>
+            m009<br/>
+            m010<br/>
+            m011<br/>
+            m012<br/>
+            m013<br/>
+            m014<br/>
+            m015<br/>
+            m016<br/>
+            m017<br/>
+            m018<br/>
+            m019<br/>
+            m020<br/>
+            m021<br/>
+            m022<br/>
+            m023<br/>
+            m024<br/>
+            m025<br/>
+            m026<br/>
+            m027<br/>
+            m028<br/>
+            m029<br/>
+            m030<br/>
+            m031<br/>
+            m032<br/>
+            m033<br/>
+            m034<br/>
+            m035<br/>
+            m036<br/>
+            m037<br/>
+            m038<br/>
+            m039<br/>
+            m040<br/>
+            m041<br/>
+            m042<br/>
+            m043<br/>
+            m044<br/>
+            m045<br/>
+            m046<br/>
+            m047<br/>
+            m048<br/>
+            m049<br/>
+            m050<br/>
+            m051<br/>
+            m052<br/>
+            m053<br/>
+            m054<br/>
+            m055<br/>
+            m056<br/>
+            m057<br/>
+            m058<br/>
+            m059<br/>
+            m060<br/>
+            m061<br/>
+            m062<br/>
+            m063<br/>
+            m064<br/>
+            m065<br/>
+            m066<br/>
+            m067<br/>
+            m068<br/>
+            m069<br/>
+            m070<br/>
+            m071<br/>
+            m072<br/>
+            m073<br/>
+            m074<br/>
+            m075<br/>
+            m076<br/>
+            m077<br/>
+            m078<br/>
+            m079<br/>
+            m080<br/>
+            m081<br/>
+            m082<br/>
+            m083<br/>
+            m084<br/>
+            m085<br/>
+            m086<br/>
+            m087<br/>
+            m088<br/>
+            m089<br/>
+            m090<br/>
+            m091<br/>
+            m092<br/>
+            m093<br/>
+            m094<br/>
+            m095<br/>
+            m096<br/>
+            m097<br/>
+            m098<br/>
+            m099<br/>
+            m100<br/>
+            m101<br/>
+            m102<br/>
+            m103<br/>
+            m104<br/>
+        </div>
+        
+        <h3>PEAK</h3> <br/>
+        
+        <br/>
+        <h3>POKE</h3> <br/>
+        
+        <br/>
+        <h3>CALL</h3> <br/>
+        
+        
+        <br/>
+        <hr/>
+        <h1>ASM</h1>
+        you can save files using the <span class="c">save file#</span>
+        <br/>
+        <br/>
+        there are file1, file2, file3, file4, file5, file6, file7, file8, file9
+        </br>
+        </br>
+        they can be saved then opened using <span class="c">load file#</span>
+        
+        <br/><br/>
+        <h2>
+            comments and commands
+        </h2>
+        comments are denoted by ;s genrally they  will be formatted as show here - <br/><img src="img/hwASM.png"/>
+        
+        <br/><br/>
+        since, ASM is hard to read, for the user will genrally 
+        
+        <h2>SIMPLE OPPERATONS</h2>
+        ld (load data into acc) 
+        st (store data into registor) 
+        add (addition add registor to acc) 
+        sub (subtraction sub registor from acc) 
+        gtne (if not equal, go to the line if not equal) 
+        sbi (set bit immediate,  seearchs for these firsst and then sets bits instantaly) 
+        cbi (clears certain bit immediately) 
+        out (output to screen adress register) 
+        
+        <h2>EXAMPLE</h2>
+        <h3>
+            This is a program that prints hello world then the sum of 2 intigers
+        </h3>
+        <div>
+            <img src="examples/ASM1.png"/>
+            <img src="examples/ASM2.png"/>
+            <img src="examples/ASM3.png"/>
+            
+            <br/>
+            the output would be 
+            <div class = "c">HELLO WORLD919</div>
+            
+            
+        </div>
+    </body>
+</html>
